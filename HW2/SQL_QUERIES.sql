@@ -31,17 +31,17 @@ FROM (
 --Calendar months in general, not months of a particular year. This means answer will be like April, October, etc rather than April 2013, October 2018, 
 
 
+
 SELECT
-    EXTRACT(MONTH FROM outcome_event.datetime) AS "Month",
+    TO_CHAR(outcome_event.datetime, 'Month') AS "Month",
     COUNT(*) AS "Total Outcomes"
 FROM
     outcome_event
 GROUP BY
-    EXTRACT(MONTH FROM outcome_event.datetime)
+    TO_CHAR(outcome_event.datetime, 'Month')
 ORDER BY
     "Total Outcomes" DESC
 LIMIT 5;
-
 
 --QUESTION 4
 
@@ -49,35 +49,8 @@ LIMIT 5;
 -- What is the total number of kittens, adults, and seniors, whose outcome is "Adopted"?
 -- Conversely, among all the cats who were "Adopted", what is the total number of kittens, adults, and seniors?
 
-
-
--- Part a to calculate the Total number of kittens, adults, and seniors whose outcome is "Adopted" 
--- Here we try to count the animals within each of the three age categories (kittens, adults, and seniors)  without the constraint of the animal being a Cat
-   SELECT
-    CASE
-        WHEN age_in_years < 1 THEN 'Kitten'
-        WHEN age_in_years >= 1 AND age_in_years <= 10 THEN 'Adult'
-        WHEN age_in_years > 10 THEN 'Senior'
-        ELSE 'Other'
-    END AS "Age Category",
-    COUNT(*) AS "Total Adopted Animals"
-FROM (
-    SELECT
-        animal.animal_id,
-        animal.animal_type,
-        DATE_PART('year', age(current_date, animal.date_of_birth)) AS age_in_years
-    FROM
-        animal
-        JOIN outcome_event ON animal.animal_id = outcome_event.animal_id
-        JOIN outcome_type ON outcome_event.outcome_type_id = outcome_type.outcome_type_id
-    WHERE
-        outcome_type.outcome_type = 'Adoption'
-) AS AdoptedCats
-GROUP BY
-    "Age Category";
-
--- Part b: we try to find among all the cats who were "Adopted", what is the total number of kittens, adults, and seniors?
--- Here we try to count only the cats within each of the three age categories (kittens, adults, and seniors) 
+-- Here we try to count only the cats who were "Adopted" within each of the three age group categories (kittens, adults, and seniors) 
+   
 SELECT
     CASE
         WHEN age_in_years < 1 THEN 'Kitten'
@@ -88,16 +61,16 @@ SELECT
     COUNT(*) AS "Total Cats Adopted"
 FROM (
     SELECT
-        animal.animal_id,
-        animal.animal_type,
-        DATE_PART('year', age(current_date, animal.date_of_birth)) AS age_in_years
+        a.animal_id,
+        a.animal_type,
+        DATE_PART('year', age(oe.datetime, a.date_of_birth)) AS age_in_years
     FROM
-        animal
-        JOIN outcome_event ON animal.animal_id = outcome_event.animal_id
-        JOIN outcome_type ON outcome_event.outcome_type_id = outcome_type.outcome_type_id
+        animal AS a
+        JOIN outcome_event AS oe ON a.animal_id = oe.animal_id
+        JOIN outcome_type AS ot ON oe.outcome_type_id = ot.outcome_type_id
     WHERE
-        outcome_type.outcome_type = 'Adoption'
-        AND animal.animal_type = 'Cat'  -- Filter for cats
+        ot.outcome_type = 'Adoption'
+        AND a.animal_type = 'Cat'
 ) AS AdoptedCats
 GROUP BY
     "Age Category";
