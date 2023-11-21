@@ -1,0 +1,10 @@
+[2023-11-20T21:21:56.911+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: austin_animal_shelter_dag.retrieve_data scheduled__2023-11-01T00:00:00+00:00 [queued]>
+[2023-11-20T21:21:57.031+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: austin_animal_shelter_dag.retrieve_data scheduled__2023-11-01T00:00:00+00:00 [queued]>
+[2023-11-20T21:21:57.038+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
+[2023-11-20T21:21:57.178+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_data> on 2023-11-01 00:00:00+00:00
+[2023-11-20T21:21:57.229+0000] {standard_task_runner.py:57} INFO - Started process 99 to run task
+[2023-11-20T21:21:57.382+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'austin_animal_shelter_dag', 'retrieve_data', 'scheduled__2023-11-01T00:00:00+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmpxp87qlz9']
+[2023-11-20T21:21:57.448+0000] {standard_task_runner.py:85} INFO - Job 59: Subtask retrieve_data
+[2023-11-20T21:21:58.458+0000] {task_command.py:416} INFO - Running <TaskInstance: austin_animal_shelter_dag.retrieve_data scheduled__2023-11-01T00:00:00+00:00 [running]> on host 94e411805366
+[2023-11-20T21:22:14.985+0000] {local_task_job_runner.py:228} INFO - Task exited with return code -9
+[2023-11-20T21:22:18.374+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

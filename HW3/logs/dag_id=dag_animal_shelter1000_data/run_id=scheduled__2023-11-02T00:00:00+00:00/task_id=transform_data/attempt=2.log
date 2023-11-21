@@ -1,0 +1,13 @@
+[2023-11-21T01:22:45.393+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_animal_shelter1000_data.transform_data scheduled__2023-11-02T00:00:00+00:00 [queued]>
+[2023-11-21T01:22:45.418+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_animal_shelter1000_data.transform_data scheduled__2023-11-02T00:00:00+00:00 [queued]>
+[2023-11-21T01:22:45.419+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-11-21T01:22:45.450+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): transform_data> on 2023-11-02 00:00:00+00:00
+[2023-11-21T01:22:45.472+0000] {standard_task_runner.py:57} INFO - Started process 297 to run task
+[2023-11-21T01:22:45.484+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'dag_animal_shelter1000_data', 'transform_data', 'scheduled__2023-11-02T00:00:00+00:00', '--job-id', '227', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmp5jwp3_ak']
+[2023-11-21T01:22:45.504+0000] {standard_task_runner.py:85} INFO - Job 227: Subtask transform_data
+[2023-11-21T01:22:45.631+0000] {task_command.py:416} INFO - Running <TaskInstance: dag_animal_shelter1000_data.transform_data scheduled__2023-11-02T00:00:00+00:00 [running]> on host 6814c7d47c6b
+[2023-11-21T01:22:45.867+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='dag_animal_shelter1000_data' AIRFLOW_CTX_TASK_ID='transform_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-02T00:00:00+00:00'
+[2023-11-21T01:23:01.847+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-21T01:23:02.078+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=dag_animal_shelter1000_data, task_id=transform_data, execution_date=20231102T000000, start_date=20231121T012245, end_date=20231121T012302
+[2023-11-21T01:23:02.303+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-21T01:23:02.394+0000] {taskinstance.py:2778} INFO - 1 downstream tasks scheduled from follow-on schedule check
