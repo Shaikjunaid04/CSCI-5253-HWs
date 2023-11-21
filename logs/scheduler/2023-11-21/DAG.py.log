@@ -3472,3 +3472,24 @@ Please take a look at these docs to improve your DAG import time:
 [2023-11-21T04:12:17.121+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:12:17.121+0000] {dag.py:2941} INFO - Sync 1 DAGs
 [2023-11-21T04:12:17.155+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:12:17.155+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_animal_shelter1000_data to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
 [2023-11-21T04:12:17.165+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/DAG.py took 0.732 seconds
+[2023-11-21T04:12:47.625+0000] {processor.py:157} INFO - Started process (PID=4088) to work on /opt/airflow/dags/DAG.py
+[2023-11-21T04:12:47.626+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/DAG.py for tasks to queue
+[2023-11-21T04:12:47.627+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:12:47.627+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/DAG.py
+[2023-11-21T04:12:48.342+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_animal_shelter1000_data']) retrieved from /opt/airflow/dags/DAG.py
+[2023-11-21T04:12:48.378+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:12:48.378+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-21T04:12:48.396+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:12:48.396+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_animal_shelter1000_data to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T04:12:48.408+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/DAG.py took 0.790 seconds
+[2023-11-21T04:13:18.982+0000] {processor.py:157} INFO - Started process (PID=4099) to work on /opt/airflow/dags/DAG.py
+[2023-11-21T04:13:18.983+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/DAG.py for tasks to queue
+[2023-11-21T04:13:18.984+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:13:18.984+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/DAG.py
+[2023-11-21T04:13:19.701+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_animal_shelter1000_data']) retrieved from /opt/airflow/dags/DAG.py
+[2023-11-21T04:13:19.730+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:13:19.729+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-21T04:13:19.753+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:13:19.753+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_animal_shelter1000_data to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T04:13:19.765+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/DAG.py took 0.787 seconds
+[2023-11-21T04:13:50.183+0000] {processor.py:157} INFO - Started process (PID=4117) to work on /opt/airflow/dags/DAG.py
+[2023-11-21T04:13:50.185+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/DAG.py for tasks to queue
+[2023-11-21T04:13:50.186+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:13:50.185+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/DAG.py
+[2023-11-21T04:13:50.878+0000] {processor.py:839} INFO - DAG(s) dict_keys(['dag_animal_shelter1000_data']) retrieved from /opt/airflow/dags/DAG.py
+[2023-11-21T04:13:50.906+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:13:50.905+0000] {dag.py:2941} INFO - Sync 1 DAGs
+[2023-11-21T04:13:50.927+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:13:50.927+0000] {dag.py:3722} INFO - Setting next_dagrun for dag_animal_shelter1000_data to 2023-11-21T00:00:00+00:00, run_after=2023-11-22T00:00:00+00:00
+[2023-11-21T04:13:50.939+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/DAG.py took 0.759 seconds

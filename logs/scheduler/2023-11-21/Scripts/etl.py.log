@@ -2427,3 +2427,18 @@ Please take a look at these docs to improve your DAG import time:
 [2023-11-21T04:12:16.438+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:12:16.438+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/Scripts/etl.py
 [2023-11-21T04:12:17.078+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/Scripts/etl.py
 [2023-11-21T04:12:17.105+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Scripts/etl.py took 0.678 seconds
+[2023-11-21T04:12:47.624+0000] {processor.py:157} INFO - Started process (PID=4087) to work on /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:12:47.626+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/Scripts/etl.py for tasks to queue
+[2023-11-21T04:12:47.627+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:12:47.626+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:12:48.337+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:12:48.363+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Scripts/etl.py took 0.751 seconds
+[2023-11-21T04:13:18.980+0000] {processor.py:157} INFO - Started process (PID=4098) to work on /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:13:18.982+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/Scripts/etl.py for tasks to queue
+[2023-11-21T04:13:18.983+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:13:18.982+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:13:19.692+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:13:19.717+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Scripts/etl.py took 0.752 seconds
+[2023-11-21T04:13:50.183+0000] {processor.py:157} INFO - Started process (PID=4116) to work on /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:13:50.185+0000] {processor.py:829} INFO - Processing file /opt/airflow/dags/Scripts/etl.py for tasks to queue
+[2023-11-21T04:13:50.186+0000] {logging_mixin.py:154} INFO - [2023-11-21T04:13:50.185+0000] {dagbag.py:536} INFO - Filling up the DagBag from /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:13:50.868+0000] {processor.py:841} WARNING - No viable dags retrieved from /opt/airflow/dags/Scripts/etl.py
+[2023-11-21T04:13:50.892+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/Scripts/etl.py took 0.718 seconds
