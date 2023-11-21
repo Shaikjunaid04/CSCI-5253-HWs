@@ -1,0 +1,16 @@
+[2023-11-20T21:32:24.366+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: austin_animal_shelter_dag.retrieve_data scheduled__2023-11-15T00:00:00+00:00 [queued]>
+[2023-11-20T21:32:24.428+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: austin_animal_shelter_dag.retrieve_data scheduled__2023-11-15T00:00:00+00:00 [queued]>
+[2023-11-20T21:32:24.432+0000] {taskinstance.py:1361} INFO - Starting attempt 2 of 2
+[2023-11-20T21:32:24.837+0000] {taskinstance.py:1382} INFO - Executing <Task(PythonOperator): retrieve_data> on 2023-11-15 00:00:00+00:00
+[2023-11-20T21:32:24.910+0000] {standard_task_runner.py:57} INFO - Started process 98 to run task
+[2023-11-20T21:32:24.964+0000] {standard_task_runner.py:84} INFO - Running: ['***', 'tasks', 'run', 'austin_animal_shelter_dag', 'retrieve_data', 'scheduled__2023-11-15T00:00:00+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/DAG.py', '--cfg-path', '/tmp/tmptxuo64tk']
+[2023-11-20T21:32:25.038+0000] {standard_task_runner.py:85} INFO - Job 85: Subtask retrieve_data
+[2023-11-20T21:32:25.451+0000] {task_command.py:416} INFO - Running <TaskInstance: austin_animal_shelter_dag.retrieve_data scheduled__2023-11-15T00:00:00+00:00 [running]> on host 94e411805366
+[2023-11-20T21:32:25.846+0000] {taskinstance.py:1662} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='austin_animal_shelter_dag' AIRFLOW_CTX_TASK_ID='retrieve_data' AIRFLOW_CTX_EXECUTION_DATE='2023-11-15T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2023-11-15T00:00:00+00:00'
+[2023-11-20T21:32:35.228+0000] {etl.py:87} INFO - No new or updated data to upload. Creating an empty CSV with headers.
+[2023-11-20T21:32:35.237+0000] {etl.py:91} INFO - Uploading data to 'raw_data'...
+[2023-11-20T21:32:35.408+0000] {etl.py:98} INFO - Updating 'Old_Data' with current data...
+[2023-11-20T21:32:35.966+0000] {python.py:194} INFO - Done. Returned value was: None
+[2023-11-20T21:32:36.111+0000] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=austin_animal_shelter_dag, task_id=retrieve_data, execution_date=20231115T000000, start_date=20231120T213224, end_date=20231120T213236
+[2023-11-20T21:32:36.365+0000] {local_task_job_runner.py:228} INFO - Task exited with return code 0
+[2023-11-20T21:32:37.387+0000] {taskinstance.py:2778} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,3 @@
+[2023-11-21T01:06:32.587+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dag_animal_shelter1000_data.transform_data scheduled__2023-11-09T00:00:00+00:00 [queued]>
+[2023-11-21T01:06:32.661+0000] {taskinstance.py:1159} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dag_animal_shelter1000_data.transform_data scheduled__2023-11-09T00:00:00+00:00 [queued]>
+[2023-11-21T01:06:32.663+0000] {taskinstance.py:1361} INFO - Starting attempt 1 of 2
